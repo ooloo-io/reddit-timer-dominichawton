@@ -1,12 +1,26 @@
+import { Router } from '@reach/router';
 import React from 'react';
-import GlobalStyle from './styles/GlobalStyle';
+
+import Home from './pages/home';
+import Search from './pages/search';
+import About from './pages/about';
+import HowItWorks from './pages/how-it-works';
+import { StyledLayout } from './components';
+import { GlobalStyle } from './utils';
 
 function App() {
 	return (
-		<div>
+		<>
 			<GlobalStyle />
-			App Placeholder
-		</div>
+			<StyledLayout>
+				<Router>
+					<Home path="/" />
+					<Search path="search" />
+					<About path="about" />
+					<HowItWorks path="how-it-works" />
+				</Router>
+			</StyledLayout>
+		</>
 	);
 }
 

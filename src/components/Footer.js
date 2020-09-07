@@ -1,5 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from '@reach/router';
 import styled from 'styled-components';
 import { ReactComponent as Sign } from '../assets/sign.svg';
 import { greyBase } from '../utils';
@@ -7,11 +8,15 @@ import { greyBase } from '../utils';
 const Footer = ({ className }) => (
 	<footer className={className}>
 		<div className={className}>
-			<p className={className}>ooloo.io</p>
+			<a href="https://ooloo.io/employers" className={className}>
+				ooloo.io
+			</a>
 		</div>
 		<Sign />
 		<div className={className}>
-			<p className={className}>Terms & Privacy</p>
+			<Link to="/terms" className={className}>
+				Terms & Privacy
+			</Link>
 		</div>
 	</footer>
 );

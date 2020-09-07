@@ -23,6 +23,9 @@ export default createGlobalStyle`
 
   body {
     font-family: "Bitter", Georgia, Times, serif;
+    font-size: 62.5%;
+    width: 90%;
+    max-width: 1440px;
   }
 
   a,
@@ -41,5 +44,31 @@ export default createGlobalStyle`
   h4,
   h5 {
     font-family: "Montserrat", Georgia, Times, serif;
+  }
+
+  /* Font sizing based on the Major Third scale https://type-scale.com */
+
+  h1 {
+    font-size: 4.883rem;
+  }
+
+  h2 {
+    font-size: 3.906rem;
+  }
+
+  h3 {
+    font-size: 3.125rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size:2rem;
+  }
+
+  p, a {
+    font-size: 1.6rem;
   }
 `;
